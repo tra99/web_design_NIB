@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Form</title>
+</head>
+<body style="background-color: rgb(250, 225, 225);">
+    <h1>Student Registration Form</h1>
+
+    <form action="">
+        <!-- Roll no -->
+        <label for="rollno">Roll no. :</label>
+        <input type="text" name="rollno" id="rollno" required>
+        <br><br>
+
+        <!-- Student name -->
+         <label for="studentName">Student name :</label>
+         <input type="text" placeholder="First Name" required> - 
+         <input type="text" placeholder="Last Name" required>
+         <br><br>
+
+         <!-- Father's name -->
+          <label for="fatherName">Father's name :</label>
+          <input type="text">
+          <br><br>
+
+        <!-- Date of birth -->
+        <label for="dob">Date of Birth :</label>
+        <input type="text" size="5" maxlength="2" placeholder="Day"> - 
+        <input type="text" size="5" maxlength="2" placeholder="Month"> -
+        <input type="text" size="5" maxlength="4" placeholder="Year"> (DD-MM-YYYY)
+        <br><br>
+
+        <!-- Mobile phone -->
+        <label for="mobilePhone">Mobile no. :</label>
+        <input type="text" size="3" value="+855" readonly> -
+        <input type="text" maxlength="10">
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <!-- Gender -->
+         <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Department -->
+        <label for="department">Department :</label>
+        <input type="checkbox" name="department" id="department" value="cse">
+        <label for="cse">CSE</label>
+        <input type="checkbox" name="it" id="it" value="it">
+        <label for="it">IT</label>
+
+        <br><br>
+        <!-- Course -->
+        <label for="course">Course :</label>
+        <select name="" id="" required>
+            <option value="">--------- Select Current Courses ---------</option>
+            <option value="">Information Technology</option>
+            <option value="">Data Science</option>
+            <option value="">Civil Engineering</option>
+        </select>
+
+        <br><br>
+
+        <!-- Student photo -->
+        <label for="studentPhoto">Student Photo :</label>
+        <input type="file" name="studentPhoto" id="studentPhoto" accept=".png" multiple>
+
+        <br><br>
+        <!-- City -->
+        <label for="city">City :</label>
+        <input type="text" name="" id="">
+        <br><br>
+
+        <!-- Address -->
+         <label for="address">Address :</label>
+         <textarea name="address" id="address" rows="5" cols="50"></textarea>
+         <br><br><br>
+
+         <input type="submit" value="Register">
+    </form>
+    <hr>
+    <br><br>
+
+    <button onclick="submit()">Submit</button>
+</body>
+
+<script>
+    function submit(){
+        alert("Submitted successfully")
+    }
+</script>
+</html>
