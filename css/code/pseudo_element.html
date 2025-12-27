@@ -6,31 +6,59 @@
     <title>Pseudo Element</title>
 
     <style>
-        .title::first-letter{
+        h1::first-letter{
             font-size: 2em;
-            font-style: italic;
+            font-style: italic ;
         }
-        .subtitle::first-line{
+        p::first-line{
             background-color: antiquewhite;
         }
-        .subtitle::selection{
-            background-color: grey;
+        p::selection{
             color: yellow;
+            background-color: darkgray;
         }
         .fruit li::before{
             content: "✌️ ";
         }
-
+        .apple::after{
+            content: " 🍏";
+        }
+        .banana::after{
+            content: " 🍌";
+        }
+        .orange::after{
+            content: " 🍊";
+        }
+        .blueberry::after{
+            content: " 🫐";
+        }
+        .menu li::marker{
+            content: "✓ ";
+            color: darkred;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
-    <h1 class="title">Bonjour</h1>
-    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis corrupti placeat at molestiae eos cumque sunt ab culpa, quisquam illum suscipit quos animi, impedit et blanditiis? Expedita qui itaque at.</p>
+    <!-- 
+        pseudo-element = keyword added after a selector that's used to style 
+        a specific parts of an element => selector:: pseudo-element
+    -->
+
+    <h1>Bonjour</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit error repudiandae iure corrupti! Ex ipsa libero aliquid autem earum id architecto quos dolores unde, harum aspernatur porro! Quod, ex!</p>
+
     <ul class="fruit">
         <li class="apple">Apple</li>
         <li class="banana">Banana</li>
         <li class="orange">Orange</li>
         <li class="blueberry">Blueburry</li>
+    </ul>
+
+    <ul class="menu">
+        <li>Ice latte</li>
+        <li>Hot cafe</li>
+        <li>Orange juice</li>
     </ul>
 </body>
 </html>
