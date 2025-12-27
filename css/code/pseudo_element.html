@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+
+    <style>
+        .title::first-letter{
+            font-size: 2em;
+            font-style: italic;
+        }
+        .subtitle::first-line{
+            background-color: antiquewhite;
+        }
+        .subtitle::selection{
+            background-color: grey;
+            color: yellow;
+        }
+        .fruit li::before{
+            content: "✌️ ";
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Bonjour</h1>
+    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis corrupti placeat at molestiae eos cumque sunt ab culpa, quisquam illum suscipit quos animi, impedit et blanditiis? Expedita qui itaque at.</p>
+    <ul class="fruit">
+        <li class="apple">Apple</li>
+        <li class="banana">Banana</li>
+        <li class="orange">Orange</li>
+        <li class="blueberry">Blueburry</li>
+    </ul>
+</body>
+</html>
