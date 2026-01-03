@@ -1,4 +1,4 @@
-.container{
+/* .container{
     border: 2px blue solid;
     padding: 12px;
     display: flow-root;
@@ -10,13 +10,15 @@
 #img2{
     float: left;
     margin-left: 16px;
-}
+} */
 
-/* div{
+div{
     margin-top: 0px;
     border: 2px red solid;
     height: 50px;
-    overflow: scroll;
-    /* overflow: hidden; */
-    /* overflow: clip;
+    overflow: clip;
+    overflow-clip-margin: 10px;
+     /* overflow: hidden; 
+     overflow: clip;
     overflow-clip-margin: 20px; */
+}

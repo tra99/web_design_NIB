@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        a:link{
+            color: lightblue;
+        }
+        a:hover{
+            color: blue;
+            font-size: 32px;
+        }
+        a:active{
+            color: brown;
+            font-size: 44px;
+        }
+        li:nth-child(2n+3){
+            background-color: aquamarine;
+            font-weight: bold;
+            font-style: italic;
+        }
+        li:hover{
+            background-color: blueviolet;
+        }
+        li:not(:hover){
+            /* background-color: burlywood; */
+        }
+        .greeting p{
+            background-color: lightblue;
+            padding: 10px;
+            display: none;
+        }
+        .greeting:hover p{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="https://google.com">Google</a>
+
+    <ul>
+        <li>This is paragraph 1</li>
+        <li>This is paragraph 2</li>
+        <li>This is paragraph 3</li>
+        <li>This is paragraph 4</li>
+        <li>This is paragraph 5</li>
+        <li>This is paragraph 6</li>
+        <li>This is paragraph 7</li>
+        <li>This is paragraph 8</li>
+        <li>This is paragraph 9</li>
+        <li>This is paragraph 10</li>
+    </ul>
+
+    <div class="greeting">Hover here
+        <p>Bonjour</p>
+    </div>
+</body>
+</html>
