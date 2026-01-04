@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        /* h1{
+            color: aquamarine;
+            background-color: gray;
+        } */
+        .header1{
+            color: blue;
+        }
+        #header{
+            background-color: blue;
+            color: white;
+            background-image: url(../assets/pexels-ella-olsson-572949-1640772.jpg);
+        }
+        h1{
+            font-style: italic;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h2{
+            color: green;
+            /* border-color: brown;
+            border-width: 2px;
+            border-style: solid; */
+            padding: 10px;
+            border: 2px dashed red;
+        }
+        .box-parent{
+            width: 600px;
+            height: 300px;
+            border: 2px solid green;
+            display: flex;
+        }
+        .box-child1{
+            width: 200px;
+            height: 100px;
+            border: 2px solid green;
+            margin-right: 20px;
+        }
+        .box-child2{
+            width: 200px;
+            margin-top: 50px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        #test::first-letter{
+            font-size: 88px;
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header1" >This is header</h1>
+    <h1 id="header">This is header</h1>
+    <h2>This is header</h1>
+    <h1>This is header</h1>
+    <div class="box-parent"> This is Parent
+        <div class="box-child1"></div>
+        <div class="box-child2"></div>
+        <i class="fa-regular fa-file"></i>
+    </div>
+
+    <h1 id="test">This is test</h1>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Property</title>
+
+    <style>
+        .container{
+            border: 2px dashed green;
+        }
+        /* decendant */
+        /* .container p{
+            background-color: antiquewhite;
+        } */
+
+        /* child */
+        /* .container >p{
+            background-color: antiquewhite;
+        } */
+
+        /* general sibling */
+        /* .container ~p{
+            background-color: antiquewhite;
+        } */
+
+        /* adjacent sibling */
+        .container +p{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+        </div>
+    </div>
+    <p>This is #4</p>
+    <p>This is #5</p>
+</body>
+</html>
