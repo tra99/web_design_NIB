@@ -1,0 +1,98 @@
+
+/* ===============================
+    BASIC PAGE STYLE
+    =============================== */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.label {
+    width: 140px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.container {
+    width: 400px;
+    height: 40px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box {
+    width: 60px;
+    height: 40px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+
+    /* SAME PROPERTY FOR ALL */
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+/* Hover trigger */
+.container:hover .box {
+    transform: translateX(340px);
+}
+
+/* ===============================
+    TIMING FUNCTIONS
+    =============================== */
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+/* 
+| Value | Meaning                      |
+| ----- | ---------------------------- |
+| `x1`  | First control point (time)   |
+| `y1`  | First control point (speed)  |
+| `x2`  | Second control point (time)  |
+| `y2`  | Second control point (speed) |
+
+| Value | Explanation            |
+| ----- | ---------------------- |
+| `0.4` | Start moving slowly    |
+| `0`   | Very slow at beginning |
+| `0.2` | Speed up early         |
+| `1`   | End smoothly           |
+*/
+
+.bezier {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.steps {
+    transition-timing-function: steps(5);
+}
