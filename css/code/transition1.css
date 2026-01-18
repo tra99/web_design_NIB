@@ -16,12 +16,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.label {
-    width: 140px;
-    display: inline-block;
-    font-weight: bold;
-}
-
 .container {
     width: 400px;
     height: 40px;
@@ -31,7 +25,11 @@ h1 {
     display: inline-block;
     vertical-align: middle;
 }
-
+.label {
+    width: 140px;
+    display: inline-block;
+    font-weight: bold;
+}
 .box {
     width: 60px;
     height: 40px;

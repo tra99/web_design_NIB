@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beginner CSS Exercise</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICON CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* =========================
+   BASIC PAGE SETUP
+========================= */
+body{
+  font-family: Arial, sans-serif;     /* (font) */
+  background: #f2f2f2;               /* (background) */
+}
+
+/* =========================
+   CARD BOX
+========================= */
+.card{
+  width: 350px;                       /* (width) */
+  height: auto;                       /* (height) */
+  
+  background-color: white;            /* (background) */
+  color: #333;                        /* (color) */
+
+  border: 2px solid #ddd;             /* (border) */
+  border-radius: 12px;
+
+  margin: 80px auto;                  /* (margin) */
+  padding: 25px;                      /* (padding) */
+
+  text-align: center;                 /* (text) */
+}
+
+/* =========================
+   TITLE TEXT
+========================= */
+.title{
+  font-size: 28px;                    /* (text/font) */
+  text-transform: uppercase;          /* (text) */
+  margin-bottom: 10px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+.desc{
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* highlight text */
+.highlight{
+  color: #0077ff;
+  font-weight: bold;
+}
+
+/* =========================
+   LIST + ICON
+========================= */
+.skills{
+  list-style: none;                   /* (list) */
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.skills li{
+  margin: 10px 0;
+  text-align: left;
+}
+
+.icon{
+  color: green;                        /* (icon) */
+  margin-right: 10px;
+}
+
+/* =========================
+   LINK / BUTTON
+========================= */
+.btn{
+  display: inline-block;
+  text-decoration: none;              /* (link) */
+
+  background: #0077ff;
+  color: white;
+
+  padding: 12px 22px;
+  margin-top: 20px;
+
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.btn:hover{
+  background: #005ccc;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1 class="title">My Profile</h1>
+
+    <p class="desc">
+      Hello! I am learning <span class="highlight">CSS</span>.  
+      I want to become a web designer.
+    </p>
+
+    <ul class="skills">
+      <li><i class="fa-solid fa-check icon"></i> HTML</li>
+      <li><i class="fa-solid fa-check icon"></i> CSS</li>
+      <li><i class="fa-solid fa-check icon"></i> JavaScript</li>
+    </ul>
+
+    <a class="btn" href="#">Visit My Website</a>
+  </div>
+
+</body>
+</html>

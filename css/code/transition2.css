@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+h1{
+    margin-bottom: 5px;
+}
+p{
+    margin-bottom: 30px;
+}
+
+.box-property{
+    width: 150px;
+    height: 100px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.box-property:hover{
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+.box-duration{
+    width: 150px;
+    height: 100px;
+    background-color: seagreen;
+    margin-top: 30px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.box-duration:hover{
+    transform: translateX(120px);
+}
+
+.box-timing{
+    width: 150px;
+    height: 100px;
+    background-color: lightpink;
+    margin-top: 30px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.box-timing:hover{
+    transform: translateY(-20px);
+}
+
+.box-delay{
+    width: 150px;
+    height: 100px;
+    background-color: orange;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+.box-delay:hover{
+    transform: scale(1.1);
+}
+
+.box-shorthand{
+    width: 150px;
+    height: 100px;
+    background-color: brown;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.4s;
+}
+.box-shorthand:hover{
+    background-color: black;
+    transform: scale(1.15);
+}
+
+.box-all{
+    width: 150px;
+    height: 100px;
+    background-color: gray;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.4s;
+}
+.box-all:hover{
+    background-color: teal;
+    transform: rotate(30deg);
+    border-radius: 16px;
+}

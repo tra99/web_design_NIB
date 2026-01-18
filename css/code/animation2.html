@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2</title>
+    <style>
+        :root{
+            --clr-accent: #ff4d4d;
+            --clr-light: #ffffff;
+            --clr-rgba: rgba(255, 77, 77, 0.15);
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .btn{
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            color: var(--clr-accent);
+            background-color: var(--clr-rgba);
+            border: 10px solid var(--clr-accent);
+            cursor: pointer;
+
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+            transition-delay: 0;
+        }
+        .btn:hover{
+            transform: translateY(-10px);
+            background-color: var(--clr-accent);
+            color: var(--clr-light);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click me</button>
+</body>
+</html>
